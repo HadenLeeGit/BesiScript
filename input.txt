@@ -1,0 +1,48 @@
+//BesiScript v1.0
+
+/*
+multi-line comment
+*/
+
+//init
+init(0,5,0)
+baseblock(true)
+instrumentinit(1,1,1)
+logicinit(0.1,0.1,0.1)
+name(demo)
+
+//field
+$msg = "Hello World"
+$btn = A+B 
+
+
+//logic
+and(A+B, "AAA", "AAA", true)
+or(A+B, "AAA", "AAA", true)
+nor(A+B, "AAA", "AAA", true)
+nand(A+B, "AAA", "AAA", true)
+xor(A+B, "AAA", "AAA", true)
+xnor(A+B, "AAA", "AAA", true)
+random(A+B, "AAA", true)
+srlatch(A+B, "AAA", "AAA")
+dlatch(A+B, "AAA", "AAA")
+counter(A+B, "AAA", "AAA")
+edge(A+B, "AAA", true)
+not(A+B, "AAA", true)
+
+//instrument
+autosensor(5, 0.5, "AAA", true, false)
+sensor(5, 0.5, A+B, true, false, A+B, false)
+
+autotimer(5, 5, "AAA", true)
+htrtimer(5, 5, "AAA", true, A+B)
+timer(5, 5, A+B, true, B, true)
+
+autoalti(5, "AAA", false)
+alti(5, "AAA", false, B, false)
+
+autospeed(5, "AAA", false)
+speed(5, "AAA", false, B, false)
+
+autoangle(45, -45, "AAA", false)
+angle(45, -45, "AAA", false, B, false)
