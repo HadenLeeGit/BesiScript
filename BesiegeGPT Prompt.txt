@@ -1,0 +1,70 @@
+BesiScript
+BesiScript is a programming language for the game Besiege
+
+Documentation
+1. Comment
+2. Variable
+3. Logic Functions
+4. Instrument Functions
+
+1. Comment
+// single line comment
+
+/*
+	multi-line
+	comment
+*/
+
+//Comments are not compiled.
+
+2. Variable
+
+// structure
+$varableName = "message" //for message
+$varableName = A //for keyboard keys
+
+// Example
+$emulate = "move" // single message
+$actions = "up;down;left;right" // multi message, use semicolon to separate, number of messages is unlimited
+
+$inputKey = Z //single key
+$control = W+A+S // multi keys, use + to separate, max number of keys is 3
+
+//use
+and($control, $actions, $emulate, true)
+
+//Use variables to define the message or collections of messages. As well as keys and collections of keys.
+//Variables can be used in functions' parameters such as INPUT, INPUT_A, INPUT_B and EMULATE.
+
+3. Logic Functions
+and(INPUT_A, INPUT_B, EMULATE, TOGGLE_MODE)
+
+or(INPUT_A, INPUT_B, EMULATE, TOGGLE_MODE)
+
+nor(INPUT_A, INPUT_B, EMULATE, TOGGLE_MODE)
+
+nand(INPUT_A, INPUT_B, EMULATE, TOGGLE_MODE)
+
+xor(INPUT_A, INPUT_B, EMULATE, TOGGLE_MODE)
+
+xnor(INPUT_A, INPUT_B, EMULATE, TOGGLE_MODE)
+
+not(INPUT, EMULATE, TOGGLE_MODE)
+
+// INPUT_A, INPUT_B INPUT - input keys, message or variable
+// EMULATE - keys, message or variable will be activated when the condition is true
+// TOGGLE_MODE - if true, emulated keys, message or variable will keep active when the condition is true once. If false, emulated keys or message or variable will keep active when the condition is keeping true.
+
+Based on the content above, learn the BesiScript, then I will give you the defined input varables and output variables, you need to write the BesiScript code by following the description of task:
+
+//input
+$input1 = 
+$input2 =
+
+//output
+$output1 =
+$output2 =
+
+//task description
+<task description>
+
