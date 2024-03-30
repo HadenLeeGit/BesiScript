@@ -58,13 +58,18 @@ func main() {
 		}
 
 		//ignore multiline comments
-		if strings.HasPrefix(line, "/*") {
+		if strings.HasPrefix(line, "/*") && !strings.Contains(line, "*/") {
 			for scanner.Scan() {
 				line = scanner.Text()
 				if strings.Contains(line, "*/") {
 					break
 				}
 			}
+			continue
+		}
+
+		//ignore multiline comments in one line
+		if strings.Contains(line, "/*") && strings.Contains(line, "*/") {
 			continue
 		}
 
@@ -80,7 +85,9 @@ func main() {
 	for _, fieldLine := range fieldLines {
 		key, value := splitField(fieldLine)
 		for i, funcLine := range funcLines {
-			if strings.Contains(funcLine, key) {
+
+			//replace the key with the value in funcLines and make sure other keys not contain the key
+			if strings.Contains(funcLine, key+" ") || strings.Contains(funcLine, key+")") || strings.Contains(funcLine, key+",") {
 				funcLines[i] = strings.Replace(funcLine, key, value, -1)
 			}
 		}
