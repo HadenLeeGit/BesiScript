@@ -55,7 +55,7 @@ not(INPUT, EMULATE, TOGGLE_MODE)
 // EMULATE - keys, message or variable will be activated when the condition is true
 // TOGGLE_MODE - if true, emulated keys, message or variable will keep active when the condition is true once. If false, emulated keys or message or variable will keep active when the condition is keeping true.
 
-Based on the content above, learn the BesiScript, then I will give you the defined input varables and output variables, you need to write the BesiScript code by following the description of task:
+Based on the content above, learn the BesiScript, then I will give you the defined input varables and output variables, you need to give me the full BesiScript code by following the description of task:
 
 //input
 $input1 = 
