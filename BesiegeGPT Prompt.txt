@@ -59,11 +59,11 @@ Based on the content above, learn the BesiScript, then I will give you the defin
 
 //input
 $input1 = 
-$input2 =
+$input2 = 
 
 //output
-$output1 =
-$output2 =
+$output1 = 
+$output2 = 
 
 //task description
 <task description>
