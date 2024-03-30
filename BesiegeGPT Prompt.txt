@@ -36,7 +36,7 @@ and($control, $actions, $emulate, true)
 //Use variables to define the message or collections of messages. As well as keys and collections of keys.
 //Variables can be used in functions' parameters such as INPUT, INPUT_A, INPUT_B and EMULATE.
 
-3. Logic Functions
+3. Logic Gates Functions
 and(INPUT_A, INPUT_B, EMULATE, TOGGLE_MODE)
 
 or(INPUT_A, INPUT_B, EMULATE, TOGGLE_MODE)
